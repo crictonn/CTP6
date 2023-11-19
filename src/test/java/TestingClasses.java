@@ -25,6 +25,7 @@ class TestingClasses {
             Configuration configuration = new Configuration();
             configuration.configure();
             sessionFactory = configuration.buildSessionFactory();
+            System.out.println("configuration success");
         } catch (Throwable ex) {
             throw new ExceptionInInitializerError(ex);
         }
